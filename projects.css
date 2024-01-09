@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #949494;
+}
+
+h2{
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.image-container img {
+    width: calc(45% - 5%); /* 45% width for each image with 5% space between them */
+    margin-bottom: 5%; /* 5% space between rows */
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: calc(100% - 10%); /* Full width with 10% padding on both sides for smaller screens */
+    }
+}
+#end{
+    text-align: center;
+    text-wrap:wrap;
+}
+
+*{
+    font-family: "lato",sans-serif;
+}
+
+/* for selecting the texts */
+::selection{
+    background: rgb(75, 196, 196);
+    color: red;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative; /* Changed from 'fixed' to 'relative' to allow normal flow */
+    bottom: 0;
+    width: 100%;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: rgb(60, 255, 0);
+}
+#petsok{
+    color: rgb(105, 105, 255);
+}
+#petsok:hover{
+    color: rgb(207, 0, 0);
+}
+
+#Download-resume{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#Download-resume:hover{
+    background-color: rgb(17, 168, 0);
+    box-shadow: 0 0 10px crimson;
+}

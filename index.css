@@ -1,0 +1,169 @@
+*{
+  font-family: "lato",sans-serif;
+}
+/* for profile pic */
+#profile{
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+}
+#profile-img{
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 2%;
+}
+#profile-img:hover{
+  transform: scaleX(-1);
+}
+
+/* about me */
+.about-me{
+  text-align: center;
+  font-family: "lato",sans-serif;
+  font-size: 1rem;
+  padding-top: .8rem;
+  margin-left : 5%;
+  margin-right: 5%;
+}
+
+/* social icon */
+.socialicon{
+  list-style-type: none;
+  font-size: 3rem;
+  display:flex;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content: space-between;
+  padding-left:0px;
+}
+
+.icon{
+  display: inline;
+  margin:0px;
+}
+
+/*link specifications*/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link*/
+a:visited {
+  color:#585967;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color:#2A2C40;
+}
+
+/* selected link */
+a:active {
+  color:#0000 ;
+  text-decoration: none;
+}
+
+
+/* code for cards */
+.card-container{
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  width: 20%;
+  height:max-content;
+  overflow: hidden;
+  transition: filter 0.3s;
+  
+}
+
+.card:hover {
+  filter: blur(3px);
+  filter: blur(0); /* Set to 0 to remove blur on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 75, 75, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card .overlay-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 18px;
+}
+
+/* dark mode */
+
+#dmode{
+  display:flex;
+  float:right;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+  
+#mode{
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+/* for selecting the texts */
+::selection{
+  background: rgb(75, 196, 196);
+  color: red;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative; /* Changed from 'fixed' to 'relative' to allow normal flow */
+  bottom: 0;
+  width: 100%;
+}
+
+#footer {
+  color: #fff;
+}
+
+/* Updated styles for dark mode */
+/* body.dark-mode footer {
+  background-color: #333;
+  color: #fff;
+}
+*/
+body.dark-mode #footer {
+  color: #fff;
+}
+
+/* Updated styles for light mode */
+/* body:not(.dark-mode) #footer {
+  color: #fff;
+} */
+
