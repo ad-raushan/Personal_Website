@@ -51,3 +51,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+::selection{
+    background: rgb(75, 196, 196);
+    color: red;
+  }
